@@ -1,16 +1,46 @@
-# Banco-de-Dados-de-Sistema-de-Gestao-para-Estudio-de-Jogos
-O objetivo deste trabalho é projetar e implementar um banco de dados relacional robusto para gerenciar as operações de um estúdio de desenvolvimento de jogos. O sistema visa centralizar informações críticas, abrangendo desde a gestão de recursos humanos (desenvolvedores e hierarquias) e o ciclo de desenvolvimento (jogos, fases, tarefas e itens), até o desempenho comercial (vendas em múltiplas lojas e plataformas) e o relacionamento com a comunidade (avaliações de jogadores). Além disso, o sistema busca integrar tecnologias de Inteligência Artificial Generativa para auxiliar na análise qualitativa de feedbacks, modernizando o processo de tomada de decisão.
+# 🎮 Sistema de Gestão para Estúdio de Jogos
 
-O sistema foi modelado para atender às necessidades complexas de um estúdio de jogos moderno. O domínio do problema abrange três grandes áreas interconectadas: Produção, Conteúdo e Comercial/Comunidade.
-No âmbito da Produção e Recursos Humanos, o sistema mantém o cadastro de Desenvolvedores, registrando dados pessoais, data de contratação e suas especialidades técnicas (ex: Programação, Arte, Design). A estrutura organizacional é hierárquica, permitindo identificar a supervisão entre desenvolvedores (auto-relacionamento). Os desenvolvedores são alocados em projetos de Jogos, desempenhando funções específicas em cada projeto.
-No núcleo de Desenvolvimento de Conteúdo, cada Jogo é associado a um Motor Gráfico (Game Engine) e classificado por gênero e data de lançamento. A estrutura interna do jogo é detalhada em Fases, que possuem níveis de dificuldade variados. Dentro dessas fases, existem Tarefas de desenvolvimento atribuídas aos colaboradores, permitindo o controle de status e prazos. Além disso, o sistema mapeia os     Itens colecionáveis distribuídos pelas fases, definindo sua raridade e pontuação, o que auxilia no balanceamento do gameplay.
-Na vertente Comercial e de Comunidade, o sistema gerencia o lançamento dos jogos em diversas Plataformas (PC, Consoles, etc.) e sua disponibilização em diferentes Lojas digitais. O registro de Vendas conecta o jogador ao jogo adquirido, permitindo análises financeiras detalhadas. Os Jogadores cadastrados podem interagir com o estúdio através de Avaliações (comentários e notas), que são armazenadas para medir a recepção do público. O sistema também utiliza Marcadores (Tags) para categorizar os jogos de forma flexível, facilitando a análise de tendências de mercado.
+Este projeto apresenta o design e a implementação de um banco de dados relacional robusto para gerenciar as operações de um estúdio de desenvolvimento de jogos. O sistema centraliza informações críticas, desde a gestão de recursos humanos e ciclo de desenvolvimento até o desempenho comercial e relacionamento com a comunidade.
+
+## 🚀 Diferenciais do Projeto
+* **Visão 360° do Estúdio:** Integração entre Produção, Conteúdo e Comercial.
+* **Inteligência Artificial:** Uso de IA Generativa (Gemini) para análise qualitativa de feedbacks de jogadores.
+* **Gestão de RH:** Estrutura hierárquica para supervisão de desenvolvedores (auto-relacionamento).
+* **Gamificação:** Controle de itens colecionáveis, raridade e pontuação por fases.
+
+## 🛠️ Tecnologias Utilizadas
+* **Banco de Dados:** SQL (Script DDL incluso).
+* **Linguagem:** Python (Integração com Banco de Dados).
+* **IA:** API do Google Gemini (Análise de sentimentos).
+* **Modelagem:** brModelo v3.31.
+
+## 📊 Modelagem de Dados
+
+### Modelo Conceitual (DER)
+O domínio do problema abrange três grandes áreas interconectadas:
+1.  **Produção e RH:** Cadastro de desenvolvedores, especialidades e hierarquia de supervisão.
+2.  **Desenvolvimento de Conteúdo:** Gestão de Jogos, Engines, Fases, Tarefas e Itens.
+3.  **Comercial e Comunidade:** Lançamento em Plataformas/Lojas, registro de Vendas e Avaliações de jogadores.
 
 Abaixo apresenta-se o Diagrama Entidade-Relacionamento (DER) desenvolvido utilizando a ferramenta brModelo v3.31.
 <img width="1343" height="576" alt="image" src="https://github.com/user-attachments/assets/f55999c9-9c62-4283-a091-6a3620bd6f99" />
 
-A partir do modelo conceitual, foi derivado o modelo lógico relacional, definindo chaves primárias (PK), chaves estrangeiras (FK) e tipos de dados.
+### Modelo Lógico
+Derivado do modelo conceitual, definindo chaves primárias (PK), chaves estrangeiras (FK) e tipos de dados otimizados.
 <img width="1453" height="852" alt="image" src="https://github.com/user-attachments/assets/c93b3cec-f85a-4675-a93d-59bb2995b84c" />
 
-O desenvolvimento deste Sistema de Gestão Integrada para Estúdio de Jogos permitiu a aplicação prática e aprofundada dos conceitos fundamentais de Banco de Dados, consolidando o conhecimento sobre modelagem relacional, integridade de dados e manipulação via SQL.
-A solução entregue apresenta um banco de dados robusto, garantido por um script DDL com regras de integridade rigorosas, e uma aplicação em Python que atende integralmente aos requisitos funcionais. Destacam-se a implementação completa das operações de CRUD (Create, Read, Update, Delete), a geração de relatórios gerenciais com gráficos e a inovadora integração com Inteligência Artificial Gemini para análise de sentimentos, demonstrando a viabilidade e a modernidade do sistema proposto.
+## 💻 Funcionalidades da Aplicação
+A solução inclui uma aplicação em Python que realiza:
+* **Operações CRUD:** Criação, leitura, atualização e deleção de registros.
+* **Relatórios Gerenciais:** Geração de gráficos de desempenho comercial e de produção.
+* **Análise de Feedbacks:** Integração com a IA Gemini para transformar comentários de jogadores em decisões estratégicas.
+
+## 📂 Estrutura de Arquivos
+* `Sistema de Gestão para Estúdio de Jogos (DDL).sql`: Script de criação das tabelas e integridade.
+* `Projeto.py` / `Tables.py` / `Drop.py`: Código-fonte da aplicação e interface com o banco.
+* `Sistema de Gestão para Estúdio de Jogos.pdf`: Documentação detalhada do projeto.
+* `insercao.txt`: Dados de exemplo para teste do sistema.
+* `Sistema de Gestão para Estúdio de Jogos (Modelo Conceitual).brM3` / `Sistema de Gestão para Estúdio de Jogos (Modelo Lógico).brM3`: Modelagem conceitual e lógica do banco de dados.
+
+---
+**Desenvolvido por:** Gabriel Raulino Dal Pont & Giordano da Rosa Correa.
