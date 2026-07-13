@@ -1,6 +1,6 @@
 # 🎮 Game Studio Management System / Sistema de Gestão para Estúdio de Jogos
 
-<details open>
+<details>
 <summary>🇺🇸 <b>Read in English</b></summary>
 <br>
 
