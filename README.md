@@ -39,6 +39,36 @@ The solution includes a Python application that performs:
 * **Management Reports:** Generation of commercial and production performance charts.
 * **Feedback Analysis:** Integration with Gemini AI to transform player comments into strategic decisions.
 
+### ⚙️ How to Run
+
+**Prerequisites:** Python 3.x, an SQL Database Management System (e.g., MySQL, PostgreSQL), and a Google Gemini API Key.
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Gabriel-Raulino/Banco-de-Dados-de-Sistema-de-Gestao-para-Estudio-de-Jogos.git
+   ```
+
+2. **Database Setup:**
+   * Open your preferred SQL environment.
+   * Execute the `Sistema de Gestão para Estúdio de Jogos (DDL).sql` script to create the entire relational database schema.
+   * *(Optional)* Use the statements inside the `insercao.txt` file to populate the database with initial sample data for testing.
+
+3. **Install Python Dependencies:**
+   Ensure you have the required libraries installed, primarily the Google Generative AI SDK and your specific SQL database connector (such as `mysql-connector-python` or `psycopg2`):
+   ```bash
+   pip install google-generativeai
+   ```
+
+4. **Environment Configuration:**
+   * Insert your Gemini API Key directly into the configuration variables within `Projeto.py` or set it up as a local environment variable.
+   * Update the database connection credentials (host, user, password) inside the Python scripts (`Projeto.py`, `Tables.py`, `Drop.py`) to match your local SQL server settings.
+
+5. **Run the Application:**
+   Execute the main Python file to start the system interface in your terminal:
+   ```bash
+   python3 Projeto.py
+   ```
+
 ### 📂 File Structure
 * `Sistema de Gestão para Estúdio de Jogos (DDL).sql`: Table creation and integrity script.
 * `Projeto.py` / `Tables.py` / `Drop.py`: Application source code and database interface.
@@ -89,6 +119,36 @@ A solução inclui uma aplicação em Python que realiza:
 * **Operações CRUD:** Criação, leitura, atualização e deleção de registros.
 * **Relatórios Gerenciais:** Geração de gráficos de desempenho comercial e de produção.
 * **Análise de Feedbacks:** Integração com a IA Gemini para transformar comentários de jogadores em decisões estratégicas.
+
+### ⚙️ Como Executar
+
+**Pré-requisitos:** Python 3.x, um Sistema Gerenciador de Banco de Dados SQL (ex: MySQL, PostgreSQL) e uma chave de API do Google Gemini.
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/Gabriel-Raulino/Banco-de-Dados-de-Sistema-de-Gestao-para-Estudio-de-Jogos.git
+   ```
+
+2. **Configuração do Banco de Dados:**
+   * Abra o seu ambiente SQL de preferência.
+   * Execute o script `Sistema de Gestão para Estúdio de Jogos (DDL).sql` para criar toda a estrutura relacional do banco.
+   * *(Opcional)* Utilize as instruções dentro do arquivo `insercao.txt` para popular o banco de dados com informações de exemplo para testes.
+
+3. **Instale as Dependências do Python:**
+   Certifique-se de instalar as bibliotecas necessárias para a execução do sistema, principalmente a SDK da IA do Gemini e o conector do seu banco de dados (como `mysql-connector-python` ou `psycopg2`):
+   ```bash
+   pip install google-generativeai
+   ```
+
+4. **Configuração de Ambiente:**
+   * Insira sua Chave de API do Gemini diretamente nas variáveis de configuração dentro de `Projeto.py` ou configure-a como uma variável de ambiente local na sua máquina.
+   * Atualize as credenciais de conexão do banco de dados (host, usuário, senha) dentro dos scripts em Python (`Projeto.py`, `Tables.py`, `Drop.py`) para conectá-los ao seu servidor SQL local.
+
+5. **Execute a Aplicação:**
+   Rode o arquivo principal do Python para iniciar a interface do sistema no seu terminal:
+   ```bash
+   python3 Projeto.py
+   ```
 
 ### 📂 Estrutura de Arquivos
 * `Sistema de Gestão para Estúdio de Jogos (DDL).sql`: Script de criação das tabelas e integridade.
