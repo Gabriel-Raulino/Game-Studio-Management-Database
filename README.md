@@ -45,7 +45,7 @@ The solution includes a Python application that performs:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Gabriel-Raulino/Banco-de-Dados-de-Sistema-de-Gestao-para-Estudio-de-Jogos.git
+   git clone https://github.com/Gabriel-Raulino/Game-Studio-Management-Database.git
    ```
 
 2. **Database Setup:**
@@ -126,7 +126,7 @@ A solução inclui uma aplicação em Python que realiza:
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/Gabriel-Raulino/Banco-de-Dados-de-Sistema-de-Gestao-para-Estudio-de-Jogos.git
+   git clone https://github.com/Gabriel-Raulino/Game-Studio-Management-Database.git
    ```
 
 2. **Configuração do Banco de Dados:**
